@@ -27,9 +27,9 @@ urlpatterns += [
 ]
 
 from django.views.generic import RedirectView
-# urlpatterns += [
-#     path('', RedirectView.as_view(url='', permanent=True)),
-# ]
+urlpatterns += [
+    path('', RedirectView.as_view(url='/main/', permanent=True)),
+]
 
 # Используйте static() чтобы добавить соотношения для статических файлов
 # Только на период разработки
